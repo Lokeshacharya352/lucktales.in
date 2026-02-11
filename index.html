@@ -2,123 +2,150 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LuckTales | Cloud & DevOps Engineer</title>
+  <title>Lokesh Acharya | Cloud & DevOps Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cloud & DevOps Engineer specializing in AWS architecture, networking, automation and secure infrastructure design.">
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/4adadbbf1d.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<!-- Floating Icon Navigation -->
-<div class="floating-nav">
-  <a href="#home"><i class="fas fa-home"></i></a>
-  <a href="#about"><i class="fas fa-user"></i></a>
-  <a href="#skills"><i class="fas fa-code"></i></a>
-  <a href="#projects"><i class="fas fa-folder"></i></a>
-  <a href="#contact"><i class="fas fa-envelope"></i></a>
-</div>
-
 <!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-content">
+<section class="hero">
+  <div class="container">
     <h1>Lokesh Acharya</h1>
     <h2>Cloud & DevOps Engineer</h2>
-    <p>Designing secure, scalable and production-ready AWS infrastructure.</p>
-    <div class="hero-buttons">
-  <a href="#projects" class="btn primary">View My Work</a>
-  <a href="resume-cloud-devops-3yoe.pdf" target="_blank" class="btn resume">Download Resume</a>
-  <a href="https://github.com/Lokeshacharya352" target="_blank" class="btn secondary">GitHub</a>
-</div>
+    <p>Building scalable, secure and production-ready cloud infrastructure.</p>
 
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="resume-cloud-devops-3yoe.pdf" target="_blank" class="btn resume">Download Resume</a>
+      <a href="https://github.com/Lokeshacharya352" target="_blank" class="btn secondary">GitHub</a>
+    </div>
+  </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Me</h2>
-  <p>
-    Passionate Cloud and DevOps Engineer with hands-on experience building scalable,
-    secure, and production-ready AWS architectures. I specialize in VPC design,
-    secure networking, infrastructure automation and real-world cloud implementation.
-  </p>
+<section class="section">
+  <div class="container">
+    <h3 class="section-title">About Me</h3>
+    <p class="section-text">
+      Passionate Cloud and DevOps Engineer with hands-on experience designing AWS VPC architectures,
+      implementing secure networking solutions, and automating infrastructure deployments.
+      I focus on building systems that are scalable, reliable and production-ready.
+    </p>
+  </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills" class="section alt">
-  <h2>Skills & Technologies</h2>
-  <div class="grid">
+<section class="section alt">
+  <div class="container">
+    <h3 class="section-title">Skills & Technologies</h3>
 
-    <div class="card">
-      <h3>Cloud & AWS</h3>
-      <p>EC2, S3, IAM, VPC, Route 53, CloudFront, RDS, VPC Peering, VPC Endpoint</p>
+    <div class="card-grid">
+
+      <div class="card">
+        <h4>Cloud & AWS</h4>
+        <p>EC2, S3, IAM, VPC, Route 53, CloudFront, RDS, VPC Peering, VPC Endpoint</p>
+      </div>
+
+      <div class="card">
+        <h4>DevOps</h4>
+        <p>Docker, Kubernetes, Jenkins, Ansible, Terraform</p>
+      </div>
+
+      <div class="card">
+        <h4>Monitoring</h4>
+        <p>Prometheus, Grafana, CloudWatch</p>
+      </div>
+
+      <div class="card">
+        <h4>Automation</h4>
+        <p>Linux, Git, GitHub Actions, CI/CD Pipelines</p>
+      </div>
+
     </div>
-
-    <div class="card">
-      <h3>DevOps</h3>
-      <p>Docker, Kubernetes, Jenkins, Ansible, Terraform</p>
-    </div>
-
-    <div class="card">
-      <h3>Monitoring</h3>
-      <p>Prometheus, Grafana, CloudWatch</p>
-    </div>
-
-    <div class="card">
-      <h3>Automation</h3>
-      <p>Linux, Git, GitHub Actions, CI/CD Pipelines</p>
-    </div>
-
   </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
-  <h2>Featured Projects</h2>
+  <div class="container">
+    <h3 class="section-title">Featured Projects</h3>
 
-  <div class="grid">
+    <div class="card-grid">
 
-    <div class="card project">
-      <h3>3-Tier VPC Architecture</h3>
-      <p>Highly available AWS architecture with public & private subnets, NAT Gateway and secure DB communication.</p>
-      <a href="https://github.com/Lokeshacharya352" target="_blank" class="project-btn">View Project</a>
+      <div class="card project">
+        <h4>3-Tier VPC Architecture</h4>
+        <p>Highly available AWS architecture with public/private subnets, NAT Gateway and secure database communication.</p>
+        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
+      </div>
+
+      <div class="card project">
+        <h4>EC2 to RDS Migration</h4>
+        <p>Secure database migration from EC2 to RDS ensuring minimal downtime and optimized networking.</p>
+        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
+      </div>
+
+      <div class="card project">
+        <h4>Private EC2 → S3 (VPC Endpoint)</h4>
+        <p>Configured S3 Gateway Endpoint for private access without Internet or NAT Gateway.</p>
+        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
+      </div>
+
+      <div class="card project">
+        <h4>Cross-Region VPC Peering</h4>
+        <p>Established secure cross-region communication using VPC Peering and route validation.</p>
+        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
+      </div>
+
+      <div class="card project">
+        <h4>AWS PrivateLink + NLB</h4>
+        <p>Exposed private service securely across VPCs using PrivateLink and Network Load Balancer.</p>
+        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <div class="card project">
-      <h3>EC2 to RDS Migration</h3>
-      <p>Secure database migration from EC2 to RDS ensuring minimal downtime.</p>
-      <a href="https://github.com/Lokeshacharya352" target="_blank" class="project-btn">View Project</a>
+<!-- TIMELINE -->
+<section class="section alt">
+  <div class="container">
+    <h3 class="section-title">Career Timeline</h3>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <span>2024</span>
+        <p>Built multiple AWS real-world architecture projects including 3-tier VPC, VPC Peering and PrivateLink.</p>
+      </div>
+
+      <div class="timeline-item">
+        <span>2025</span>
+        <p>Expanded into DevOps tools including Docker, Kubernetes, Jenkins and Infrastructure as Code.</p>
+      </div>
+
+      <div class="timeline-item">
+        <span>2026</span>
+        <p>Focused on production-ready cloud solutions, monitoring and automation pipelines.</p>
+      </div>
     </div>
-
-    <div class="card project">
-      <h3>Private EC2 → S3 via VPC Endpoint</h3>
-      <p>Accessed S3 privately without Internet or NAT using Gateway Endpoint and SSM.</p>
-      <a href="https://github.com/Lokeshacharya352" target="_blank" class="project-btn">View Project</a>
-    </div>
-
-    <div class="card project">
-      <h3>Cross-Region VPC Peering</h3>
-      <p>Established secure cross-region communication using VPC Peering and route validation.</p>
-      <a href="https://github.com/Lokeshacharya352" target="_blank" class="project-btn">View Project</a>
-    </div>
-
-    <div class="card project">
-      <h3>PrivateLink + NLB</h3>
-      <p>Exposed private service securely across VPCs using AWS PrivateLink and NLB.</p>
-      <a href="https://github.com/Lokeshacharya352" target="_blank" class="project-btn">View Project</a>
-    </div>
-
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section alt">
-  <h2>Contact</h2>
-  <p>Email: lokeshacharya.it22@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/Lokeshacharya352" target="_blank">Lokeshacharya352</a></p>
+<section class="section">
+  <div class="container">
+    <h3 class="section-title">Contact</h3>
+    <p>Email: lokeshacharya.it22@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/Lokeshacharya352" target="_blank">Lokeshacharya352</a></p>
+  </div>
 </section>
 
 <footer>
-  © 2026 LuckTales | Cloud & DevOps Portfolio
+  © 2026 Lokesh Acharya | Cloud & DevOps Engineer
 </footer>
 
 </body>
 </html>
+     
+ 
