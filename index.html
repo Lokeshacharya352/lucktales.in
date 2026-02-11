@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>LuckTales | Cloud & DevOps Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hi, I'm Lokesh 👋</h1>
-  <p>Cloud & DevOps Engineer</p>
-  <p>Welcome to LuckTales</p>
+
+  <header>
+    <h1>Lokesh Acharya</h1>
+    <p>Cloud & DevOps Engineer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Passionate Cloud and DevOps Engineer with hands-on experience building scalable,
+      secure, and production-ready AWS architectures. I enjoy solving infrastructure
+      challenges and automating deployments using DevOps practices.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill-category">
+      <h3>Cloud & AWS</h3>
+      <p>EC2, S3, IAM, VPC, Route 53, CloudFront, RDS, VPC Peering, VPC Endpoint</p>
+    </div>
+
+    <div class="skill-category">
+      <h3>DevOps Tools</h3>
+      <p>Docker, Kubernetes, Jenkins, Ansible, Terraform</p>
+    </div>
+
+    <div class="skill-category">
+      <h3>Monitoring & Logging</h3>
+      <p>Prometheus, Grafana, CloudWatch</p>
+    </div>
+
+    <div class="skill-category">
+      <h3>Other</h3>
+      <p>Linux, Git, CI/CD, Github Actions, Github Pages</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>3-Tier VPC Architecture</h3>
+      <p>This project demonstrates the real-world AWS VPC architecture where a public web server communicates with a private database, while secure internet access is managed using an Internet Gateway and NAT Gateway.</p>
+      <a href="https://github.com/Lokeshacharya352" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>EC2 to RDS Migration</h3>
+      <p>Migrated MySQL database from EC2 to RDS ensuring minimal downtime and secure connectivity.</p>
+      <a href="https://github.com/Lokeshacharya352" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Private EC2 Accessing S3 Using VPC Endpoint (No Internet, No NAT)</h3>
+      <p>This project demonstrates how an EC2 instance in a private subnet can access Amazon S3 without using the Internet Gateway, NAT Gateway, or a public IP, by using a VPC Gateway Endpoint.
+Access to the EC2 instance is done securely using AWS Systems Manager (SSM) Session Manager via Interface Endpoints.</p>
+      <a href="https://github.com/Lokeshacharya352" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>VPC Peering Setup</h3>
+      <p>This project demonstrates how to establish private communication between two VPCs located in different AWS regions using VPC Peering, Route Tables, and Security Groups.
+The connectivity is validated using ICMP (ping) between EC2 instances deployed in each VPC.
+This setup shows how AWS enables secure, low-latency, private networking across regions without using the public internet.</p>
+      <a href="https://github.com/Lokeshacharya352" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Private Service Exposure Using VPC Endpoint (PrivateLink) with Network Load Balancer</h3>
+      <p>This project demonstrates how to expose a private service running in one VPC to another VPC using AWS PrivateLink and a Network Load Balancer (NLB) without using the public internet, Internet Gateway, or NAT Gateway at runtime.The entire communication happens over the AWS private backbone, providing a highly secure, scalable, and enterprise-grade architecture..</p>
+      <a href="https://github.com/Lokeshacharya352" target="_blank">View on GitHub</a>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: lokeshacharya.it22@gmail.com</p>
+    <p>GitHub: https://github.com/Lokeshacharya352</p>
+  </section>
+
+  <footer>
+    <p>© 2026 LuckTales | Built with GitHub Pages</p>
+  </footer>
+
 </body>
 </html>
