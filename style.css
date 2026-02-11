@@ -1,149 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Lokesh Acharya | Cloud & DevOps Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cloud & DevOps Engineer specializing in AWS architecture, networking, automation and secure infrastructure design.">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:'Segoe UI',sans-serif;
+background:#0f172a;
+color:#e2e8f0;
+overflow-x:hidden;
+}
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Lokesh Acharya</h1>
-    <h2>Cloud & DevOps Engineer</h2>
-    <p>Building scalable, secure and production-ready cloud infrastructure.</p>
+/* Animated Background */
+.background-animation{
+position:fixed;
+width:100%;
+height:100%;
+background:linear-gradient(-45deg,#0f172a,#1e3a8a,#111827,#0f172a);
+background-size:400% 400%;
+animation:gradientMove 15s ease infinite;
+z-index:-1;
+}
 
-    <div class="hero-buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
-      <a href="Lokesh_Acharya_Resume.pdf" target="_blank" class="btn resume">Download Resume</a>
-      <a href="https://github.com/Lokeshacharya352" target="_blank" class="btn secondary">GitHub</a>
-    </div>
-  </div>
-</section>
+@keyframes gradientMove{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
 
-<!-- ABOUT -->
-<section class="section">
-  <div class="container">
-    <h3 class="section-title">About Me</h3>
-    <p class="section-text">
-      Passionate Cloud and DevOps Engineer with hands-on experience designing AWS VPC architectures,
-      implementing secure networking solutions, and automating infrastructure deployments.
-      I focus on building systems that are scalable, reliable and production-ready.
-    </p>
-  </div>
-</section>
+/* Hero */
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:50px;
+}
 
-<!-- SKILLS -->
-<section class="section alt">
-  <div class="container">
-    <h3 class="section-title">Skills & Technologies</h3>
+.hero-content{
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
+max-width:1200px;
+width:100%;
+}
 
-    <div class="card-grid">
+.hero-left{flex:1}
+.hero-right{flex:1;text-align:center;animation:float 4s ease-in-out infinite}
 
-      <div class="card">
-        <h4>Cloud & AWS</h4>
-        <p>EC2, S3, IAM, VPC, Route 53, CloudFront, RDS, VPC Peering, VPC Endpoint</p>
-      </div>
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-15px)}
+}
 
-      <div class="card">
-        <h4>DevOps</h4>
-        <p>Docker, Kubernetes, Jenkins, Ansible, Terraform</p>
-      </div>
+.hero h1{font-size:48px}
+.hero h2{color:#94a3b8;margin:10px 0}
+.hero p{margin:20px 0;color:#cbd5e1}
 
-      <div class="card">
-        <h4>Monitoring</h4>
-        <p>Prometheus, Grafana, CloudWatch</p>
-      </div>
+/* Buttons */
+.btn{
+display:inline-block;
+padding:14px 28px;
+margin:10px 10px 0 0;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
 
-      <div class="card">
-        <h4>Automation</h4>
-        <p>Linux, Git, GitHub Actions, CI/CD Pipelines</p>
-      </div>
+.primary{background:#3b82f6;color:white}
+.primary:hover{background:#2563eb;transform:translateY(-3px)}
 
-    </div>
-  </div>
-</section>
+.resume{background:linear-gradient(135deg,#22c55e,#16a34a);color:white}
+.resume:hover{box-shadow:0 10px 25px rgba(34,197,94,.4)}
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="container">
-    <h3 class="section-title">Featured Projects</h3>
+.secondary{border:2px solid #3b82f6;color:#3b82f6}
+.secondary:hover{background:#3b82f6;color:white}
 
-    <div class="card-grid">
+/* Sections */
+.section{padding:100px 10%}
+.section.alt{background:#111827}
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+background:linear-gradient(90deg,#3b82f6,#22c55e);
+-webkit-background-clip:text;
+color:transparent;
+}
 
-      <div class="card project">
-        <h4>3-Tier VPC Architecture</h4>
-        <p>Highly available AWS architecture with public/private subnets, NAT Gateway and secure database communication.</p>
-        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
-      </div>
+/* Cards */
+.card-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
 
-      <div class="card project">
-        <h4>EC2 to RDS Migration</h4>
-        <p>Secure database migration from EC2 to RDS ensuring minimal downtime and optimized networking.</p>
-        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
-      </div>
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:14px;
+transition:.3s;
+position:relative;
+overflow:hidden;
+}
 
-      <div class="card project">
-        <h4>Private EC2 → S3 (VPC Endpoint)</h4>
-        <p>Configured S3 Gateway Endpoint for private access without Internet or NAT Gateway.</p>
-        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
-      </div>
+.card i{
+font-size:30px;
+margin-bottom:15px;
+color:#3b82f6;
+}
 
-      <div class="card project">
-        <h4>Cross-Region VPC Peering</h4>
-        <p>Established secure cross-region communication using VPC Peering and route validation.</p>
-        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
-      </div>
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 40px rgba(0,0,0,.4);
+}
 
-      <div class="card project">
-        <h4>AWS PrivateLink + NLB</h4>
-        <p>Exposed private service securely across VPCs using PrivateLink and Network Load Balancer.</p>
-        <a href="https://github.com/Lokeshacharya352" target="_blank">View Project →</a>
-      </div>
+/* Project */
+.project img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
 
-    </div>
-  </div>
-</section>
+.project a{
+display:inline-block;
+margin-top:10px;
+color:#22c55e;
+text-decoration:none;
+}
 
-<!-- TIMELINE -->
-<section class="section alt">
-  <div class="container">
-    <h3 class="section-title">Career Timeline</h3>
+/* Footer */
+footer{
+text-align:center;
+padding:40px;
+background:#0b1120;
+color:#94a3b8;
+}
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <span>2024</span>
-        <p>Built multiple AWS real-world architecture projects including 3-tier VPC, VPC Peering and PrivateLink.</p>
-      </div>
-
-      <div class="timeline-item">
-        <span>2025</span>
-        <p>Expanded into DevOps tools including Docker, Kubernetes, Jenkins and Infrastructure as Code.</p>
-      </div>
-
-      <div class="timeline-item">
-        <span>2026</span>
-        <p>Focused on production-ready cloud solutions, monitoring and automation pipelines.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="section">
-  <div class="container">
-    <h3 class="section-title">Contact</h3>
-    <p>Email: lokeshacharya.it22@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/Lokeshacharya352" target="_blank">Lokeshacharya352</a></p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Lokesh Acharya | Cloud & DevOps Engineer
-</footer>
-
-</body>
-</html>
+/* Responsive */
+@media(max-width:768px){
+.hero-content{flex-direction:column;text-align:center}
+.hero h1{font-size:32px}
+}
